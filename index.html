@@ -8,6 +8,16 @@
     <p>Welcome to my first website.</p>
     <h2>Web Security</h2>
     <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">[Answer here]</p>
+    <p id="web-security-answer">
+      The websites today are well protected but still have potential security issues, but these require the human factor too. Many of the vulnerabilities start with a user clicking on a link, while logged in to the web application. It is really important to stop and think before we click on any link that we receive by email or by message.
+      
+      The XSS or Cross-Site Scripting attacks takes advantage of the code's application, which puts a user input from the url directly to the document. If the input is not sanitized it can contain malicious javascript code that would run on the victim's browser. The consequences are that the attacker can impersonate the victim, and read or write data on his or her behalf. 
+      
+      Another form of an attack can be Cross-Site Request Forgery, a.k.a CSRF. This can also be initiated by clicking on a link, however the domain name would be different, since an attacker has to host a website with the malicious code. If the hacker's domain is opened, then the user would send a request to the backend unknowingly. This would lead to the attacker reading or writing protected information.
+      
+      Finally, there is SQL injection attack, which is a backend vulnerability. All data from the frontend should be handled as tainted, and should be sanitized first, therefore the security issue cannot be closed just by the frontend.
+      
+      Educating the users is the most important. Stop, think and ask before reacting.
+      </p>
   </body>
 </html>
